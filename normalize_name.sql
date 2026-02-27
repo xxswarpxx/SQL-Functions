@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION ebg_qa.normalize_name(name text)
+CREATE OR REPLACE FUNCTION normalize_name(name text)
 RETURNS text AS $$
 BEGIN
     name := initcap(name);
@@ -11,3 +11,4 @@ BEGIN
 END;
 
 $$ LANGUAGE plpgsql IMMUTABLE;
+
