@@ -10,3 +10,4 @@ Useful SQL functions you can add to your code to make it easier. They're mostly 
                           				call ebg_qa.normalize_name('B Teran Ana);
                           		
                           				All of these calls will return 'Ana B Teran'
+3. normalize_address: This function helps create a normalize address version focusing on the street elements only for comparison purposes. Works with US only addresses
