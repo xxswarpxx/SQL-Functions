@@ -22,8 +22,9 @@ BEGIN
     ('Washington', 'WA'), ('West Virginia', 'WV'), ('Wisconsin', 'WI'),
     ('Wyoming', 'WY')
   ) AS state_table(name, abb)
-  WHERE name = state_name;
+  WHERE name = initcap(state_name);
 
   RETURN abbreviation;
 END;
+
 $$ LANGUAGE plpgsql;
